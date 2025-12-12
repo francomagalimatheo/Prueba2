@@ -1,12 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos - MEPA</title>
+  <link rel="stylesheet" href="estilos.css">
+  <script src="script.js" defer></script>
 </head>
+
 <body>
+
+<header class="header">
+  <div class="container header-content">
+    <div class="logo-area">
+      <img src="imagenes/logo.png" alt="Logo MEPA">
+      <h1>MEPA</h1>
+    </div>
+
+    <nav class="nav">
+      <ul class="nav-list">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a class="active" href="Productos.html">Productos</a></li>
+        <li><a href="Contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <div class="menu-btn" id="menuBtn">☰</div>
+  </div>
+</header>
+
+<main class="container">
+
+  <h2>Catálogo de Productos</h2>
+  <p>Listado de productos gestionados por MEPA.</p>
+
+  <div class="product-grid-advanced">
+
+    <article class="card product-card">
+      <img src="imagenes/guantes.jpg" alt="">
+      <h4>Guantes de MMA</h4>
+      <p>Ideal para los amantes de las artes marciales.</p>
+      <a href="Contacto.html" class="btn small">Consultar</a>
+    </article>
+
+    <article class="card product-card">
+      <img src="imagenes/vestido.png" alt="">
+      <h4>Vestido de negro para camisetas</h4>
+      <p>Perfecto para transporte marítimo. Alta demanda.</p>
+      <a href="Contacto.html" class="btn small">Consultar</a>
+    </article>
+
+    <article class="card product-card">
+      <img src="imagenes/smart tv.jpg" alt="">
+      <h4>Samsung Smart TV</h4>
+      <p>.</p>
+      <a href="Contacto.html" class="btn small">Consultar</a>
+    </article>
+
     
+
+    <article class="card product-card">
+      <img src="imagenes/perfume chanel.png" alt="">
+      <h4>Perfume Bleu de Chanel</h4>
+      <p>.</p>
+      <a href="Contacto.html" class="btn small">Consultar</a>
+    </article>
+
+  </div>
+
+</main>
+
+<footer class="footer">
+  <p>© MEPA - Comercio Internacional</p>
+</footer>
+
 </body>
 </html>

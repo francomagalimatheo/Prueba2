@@ -1,6 +1,6 @@
 clase 1 13/6
 
-Nombre del proyecto : El mundo del reves
+Nombre del proyecto : ALL WORLD
 
 Estoy tratando de hacer mi primer sitio de Marketing, y aun no se que promocionar. Podrian ser armas o ropa, o cualquier otras cosa, la verdad no se, luego se me ocurrira algo.
 
