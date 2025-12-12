@@ -1,25 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - MEPA</title>
+  <link rel="stylesheet" href="estilos.css">
+  <script src="script.js" defer></script>
 </head>
+
 <body>
-    <main>
-         <form action="" method="post">
-            <label for="nombre">nombre</label>
-            <input type="text" id="nombre">
-            <br>
-            <label for="correo">Correo</label> 
-            <input type="text" id="correo">
-            <br>
-            <label for="mensaje">mensaje</label>
-            <textarea></textarea> 
-            <label for="enviar"></label>
-            <input type="submit" id="enviar">
-        </form>
-        <a href="index.html">Inicio</a>
-    </main>
+
+  <header class="header">
+    <div class="container header-content">
+      <div class="logo-area">
+        <img src="imagenes/logo.png" alt="Logo MEPA">
+        <h1>MEPA</h1>
+      </div>
+
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="Productos.html">Productos</a></li>
+          <li><a class="active" href="Contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="menu-btn">☰</div>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Contacto</h2>
+
+    <form action="https://formspree.io/f/mgvnybpv" method="POST" class="form-grid" id="contactForm" novalidate>
+
+      <div class="form-field">
+        <label>Nombre</label>
+        <input type="text" name="nombre" required>
+      </div>
+
+      <div class="form-field">
+        <label>Email</label>
+        <input type="email" name="correo" required>
+      </div>
+
+      <div class="form-field form-full">
+        <label>Mensaje</label>
+        <textarea name="mensaje" rows="6" required></textarea>
+      </div>
+
+      <button class="btn" type="submit">Enviar</button>
+
+      <p id="formMessage" class="form-message"></p>
+
+    </form>
+  </main>
+
+<footer class="footer">
+  <p>© MEPA - Comercio Internacional</p>
+</footer>
+
 </body>
 </html>

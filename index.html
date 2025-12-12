@@ -1,49 +1,88 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Primer Proyecto</title>
-    <link rel="stylesheet" href="./css/estilos.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MEPA - Comercio Internacional</title>
+  <link rel="stylesheet" href="estilos.css">
+  <script src="script.js" defer></script>
 </head>
+
 <body>
-    <header>
-        <h1>Mi sitio Web</h1>
-        <h2>Este es un subtítulo en el header</h2>
-    </header>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-content">
+      <div class="logo-area">
+        <img src="imagenes/logo.png" alt="Logo MEPA">
+        <h1>M.E.P.A.
+          Movimiento de Exportación y Puentes Aduaneros.</h1>
+      </div>
 
-    <nav>
+      <nav class="nav">
         <ul class="nav-list">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Acerca de</a></li>
-            <li><a href="#">Servicios</a></li>
-            <li><a href="#">Contacto</a></li>
+          <li><a class="active" href="index.html">Inicio</a></li>
+          <li><a href="Productos.html">Productos</a></li>
+          <li><a href="Contacto.html">Contacto</a></li>
         </ul>
-    </nav>
+      </nav>
 
-    <img src="armapedia.jpg" width="1100" height="450" alt="Descripción de la imagen">
+      <div class="menu-btn" id="menuBtn">☰</div>
+    </div>
+  </header>
 
-    <nav>
+  <!-- HERO -->
+  <section class="hero container">
+    <div class="hero-grid">
+      <div class="hero-text">
+        <h2>Soluciones Globales de Comercio Internacional</h2>
+        <p>Asesoría, logística, trámites aduaneros y agilización operativa para empresas modernas.</p>
+        <a href="Contacto.html" class="btn">Contáctanos</a>
+      </div>
+
+      <div class="hero-img">
+        <img src="imagenes/logo.png" alt="Comercio Internacional">
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section class="services container">
+    <h3>Servicios Principales</h3>
+
+    <div class="services-grid">
+      <article class="card">
+        <h4>Exportación</h4>
         <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="Productos.html">Productos</a></li>
-            <li><a href="Contacto.html">Contacto</a></li>
+          <li>Gestión documental</li>
+          <li>Cotización logística</li>
+          <li>Optimización de costos</li>
         </ul>
-    </nav>
+      </article>
 
-    <main>
-        <p>
-            Este es un párrafo de introducción sobre el proyecto. Aquí podés usar
-            <strong>negrita</strong>, <em>cursiva</em> y <s>tachado</s>.
-        </p>
-    </main>
+      <article class="card">
+        <h4>Importación</h4>
+        <ul>
+          <li>Despacho aduanero</li>
+          <li>Control de calidad</li>
+          <li>Búsqueda de proveedores</li>
+        </ul>
+      </article>
 
-    <footer>
-        <p>Este es el pie de página con la información de contacto.</p>
-        <i class="fa-brands fa-facebook"></i>
-    </footer>
+      <article class="card">
+        <h4>Logística Global</h4>
+        <ul>
+          <li>Transporte marítimo</li>
+          <li>Aéreo y terrestre</li>
+          <li>Almacenaje internacional</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© MEPA - Comercio Internacional</p>
+    <a id="ref" href="README.md">Acerca de</a>
+  </footer>
 </body>
 </html>
